@@ -1,8 +1,11 @@
+import { ClerkProvider } from "@clerk/nextjs";
+import { shadcn } from "@clerk/ui/themes";
 import type { Metadata } from "next";
 import { Jost, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/ui/Navbar";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -29,8 +32,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         inter.variable,
       )}>
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
+        <ClerkProvider appearance={{ theme: shadcn }}>
+          <Suspense fallback={null}>
+            <Navbar />
+            {children}
+          </Suspense>
+        </ClerkProvider>
       </body>
     </html>
   );
