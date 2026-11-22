@@ -69,9 +69,13 @@ export default function Navbar() {
                 <div className="nav-user-link">
                   <UserButton />
                   {user?.firstName && (
-                    <Link href="/subscriptions" className="nav-user-name">
-                      {user.firstName}
-                    </Link>
+                    <div className="rounded-md px-3 py-1 border border-black hover:bg-black transition-all duration-300">
+                      <Link
+                        href="/subscriptions"
+                        className="nav-user-name hover:text-white">
+                        {user.firstName}
+                      </Link>
+                    </div>
                   )}
                 </div>
               </Show>
