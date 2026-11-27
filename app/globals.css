@@ -295,7 +295,7 @@
     @apply border-[var(--color-brand)];
   }
   .page-title-xl {
-    @apply text-4xl md:text-5xl font-semibold text-black tracking-[-0.02em] leading-13.5 font-serif;
+    @apply text-4xl md:text-5xl font-semibold text-black tracking-[-0.02em] leading-13.5;
   }
   .section-title {
     @apply text-2xl md:text-[30px] font-semibold text-black leading-7.5 font-serif;
@@ -667,7 +667,7 @@
 
   /* upload form component */
   .upload-dropzone {
-    @apply flex flex-col items-center justify-center h-[165px] bg-white rounded-[6px] cursor-pointer transition-all;
+    @apply flex flex-col items-center justify-center h-41.25 bg-white rounded-[6px] cursor-pointer transition-all;
 
     &:hover {
       @apply bg-gray-50;
@@ -684,7 +684,7 @@
     }
   }
   .upload-dropzone-icon {
-    @apply w-[48px] h-[48px] mb-2 text-[#8B7355];
+    @apply w-12 h-12 mb-2 text-[#8B7355];
   }
   .upload-dropzone-text {
     @apply text-[#777] text-lg font-medium text-center;

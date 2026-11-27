@@ -48,7 +48,7 @@ export default function HeroSection() {
             </div>
 
             {/* Right Part */}
-            <div className="library-steps-card min-w-[260px] max-w-[280px] z-10 shadow-soft-md">
+            <div className="library-steps-card min-w-65 max-w-70 z-10 shadow-soft-md">
               <ul className="space-y-6 list-none p-0 m-0">
                 <li className="library-step-item">
                   <div className="library-step-number">1</div>
